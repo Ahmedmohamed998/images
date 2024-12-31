@@ -50,7 +50,7 @@ def main():
 
         original_size = get_image_size(temp_file_path)
         st.write(f"#### Original Image Size: **{original_size:.2f} MB**")
-        st.image(temp_file_path, caption="Original Image", use_column_width=True)
+        st.image(temp_file_path, caption="Original Image", use_container_width=True)
         st.write("---")
 
         if original_size > 2:
